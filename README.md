@@ -63,9 +63,8 @@ language implementations in general.
 It is mainly intended to fulfill my needs and probably has few a bugs/flaws.
 
 I do not try to sway you from using it.
-If you want to use C libraries with FORTH, I still believe ex:forth to be the
-best choice.
-(tell me if there is a better one, I would like to know)
+If you want to use C libraries with FORTH, I still believe ex:forth to be a
+solid choice.
 Just take it for what it is and don't expect perfection.
 
 # Credits
@@ -74,6 +73,13 @@ All the core parts were made by
 [Phill Burk](https://github.com/philburk).
 
 All I did was added some words and the ability to load C libraries at runtime.
+
+# Other FORTHs with runtime FFI
+
+* [r3](https://github.com/phreda4/r3)
+* [e4](https://github.com/shwnchpl/e4)
+
+Tell me if you know of any other.
 
 # Instructions
 
