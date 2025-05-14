@@ -109,7 +109,6 @@ It is just not my priority right now.
 
 ```
 # to install globaly
-
 cmake .
 sudo make install
 
