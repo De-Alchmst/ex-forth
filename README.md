@@ -108,12 +108,13 @@ It is just not my priority right now.
 ## Building
 
 ```
-cmake .
-
 # to install globaly
+
+cmake .
 sudo make install
 
 # or to install locally
+cmake -DCMAKE_INSTALL_PREFIX="$HOME/.local" .
 make install/local
 ```
 
