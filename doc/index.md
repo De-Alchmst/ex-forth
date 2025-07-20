@@ -2,6 +2,7 @@
 This manual describes changes from
 [pforth](https://www.softsynth.com/pforth/).
 Extra words can be found [here](words.md).
+Included modules can be found [here](modules.md)
 
 Full list of changes can be found
 [here](changes.md).
@@ -210,9 +211,6 @@ Those are:
 - `~/.local/share/exforth/`
 
 This can be used for sharing code between projects.
-ex:forth by itself provides Gforth-compatible `random.fs`.
-While pforth has it's own RANDOM, you can find a extra 
-independent random number generator that can generate numbers in a range.
 
 Any other file operation is controlled by ALTER-PATH! and ALTER-PATH@.
 These operate on boolean values:

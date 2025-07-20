@@ -483,7 +483,15 @@ unix? [IF] \ *nix
 \ HERE WILL BE FORTH...
 
 : C-LIBRARY-NAME ( c-addr u -- )
-  \ TODO: check if already compiled
+  \ TODO: check if already compiled (or most likely not not?)
+  \ While it would be nice to not have to generate/recompile the whole thing
+  \ every time, There is a lot of egde cases to think of due to the nature of
+  \ forth. Some might include:
+  \   - bindings spanning across multiple files
+  \   - bindings generated at runtime
+  \   - bindings being pulled over the net (that sound fun...)
+  \ Due to all this, I'm not sure it's ideal to try achieving something like
+  \ this. But we'll see.
   init-all
   unix? if
     s" mkdir -p ~/.local/share/exforth/.clibs 2> /dev/null" system
